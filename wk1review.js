@@ -3,10 +3,18 @@
 ///////////////////////////////////////////////////////////////
 
 //1. Write a JavaScript display the larger of two integers
-  function greaterNumber(x,y) {
-    return x > y ? x: y;
+  const greaterNumber = (x,y) => {
+    if(x === y) {
+      return 'Equal';
+    } else if(x > y) {
+      return x;
+    } else {
+      return y;
+    }
   }
-  console.log(greaterNumber(3,2));
+  
+  
+  console.log(greaterNumber(3,3));
 /* 2. Write an if/else statement for the following requirements:
 
 If student gets 90 or higher: console log  A
@@ -49,14 +57,17 @@ function greeting(time) {
   } else {
     console.log("Hey there")
   }
-}
+}  //return to this to see how to parse :;
+
 ////////////////////////////////////////////////////////////////
 // Strings:
 ///////////////////////////////////////////////////////////////
 // Look up the following string methods!
 
 // Using charAt(), print the letter i in Sabrina
-
+  let chatAtPractice = 'Sabrina';
+  console.log(chatAtPractice.charAt(4));
+  
 // Define Unicode in a comment, and get the Unicode using charCodeAt() of the third character in Teddy
 
 // Using fromCharCode() - make it readable for us :). You'll see!
