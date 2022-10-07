@@ -184,7 +184,7 @@ Any grade lower than 55 is F */
 //        console.log(array.sort((a,b) => a - b));
 // includes() Checks to see if an array contains a inputted value, returning a boolean value. i.e let array = [1,2,3,4,5] -> array.includes(2) -> true || array.includes(100) -> false.
 // indexOf() returns the first index at which a given element can be found, returns -1 if not present. i.e let array = [1,2,3,4,5] -> array.indexOf(2) -> 1 || array.indexOf(100) -> -1
-// length returns the length of an array. i.e let array = [1,2,3,4,5] -> array.length -> 5 **doesn't start the count at 0 but rather 1..not index based.**
+// length returns the length of an specified data type. i.e let array = [1,2,3,4,5] -> array.length -> 5 **doesn't start the count at 0 but rather 1..not index based.**
 
 // /* You've been tasked to do this week's grocery shopping. As you arrive at Times Supermarket, Raphael pings you to get a bottle of Hendricks gin. Add this to the existing shoppingList and console.log it.*/
 // var shoppingList = [
