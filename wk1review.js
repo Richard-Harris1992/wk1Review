@@ -41,7 +41,15 @@ autoGrader(67);
 autoGrader(54);
 
 //3. Write a JavaScript program that displays "Good Morning" if time is between 5AM-11:59 | "Good Afternoon" if time is between 12 - 16 | otherwise "Hey there"
-
+function greeting(time) {
+  if(time >= 5 && time < 12) {
+    console.log("Good Morning");
+  } else if(time >= 12 && time <= 16) {
+    console.log("Good Afternoon")
+  } else {
+    console.log("Hey there")
+  }
+}
 ////////////////////////////////////////////////////////////////
 // Strings:
 ///////////////////////////////////////////////////////////////
