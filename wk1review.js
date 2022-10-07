@@ -47,15 +47,15 @@ Any grade lower than 55 is F */
 // autoGrader(54);
 
 //3. Write a JavaScript program that displays "Good Morning" if time is between 5AM-11:59 | "Good Afternoon" if time is between 12 - 16 | otherwise "Hey there"
-// function greeting(time) {
-//   if(time >= 5 && time < 12) {
+// function greeting(hour, minutes) {
+//   if(hour >= 5 && hour < 12) {
 //     console.log("Good Morning");
-//   } else if(time >= 12 && time <= 16) {
+//   } else if(hour >= 12 && hour <= 16) {
 //     console.log("Good Afternoon")
 //   } else {
 //     console.log("Hey there")
 //   }
-// }  //return to this to see how to parse :;
+// }
 
 ////////////////////////////////////////////////////////////////
 // Strings:
