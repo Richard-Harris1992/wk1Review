@@ -98,10 +98,10 @@ Any grade lower than 55 is F */
 // With the powers of logical and comparison operators, PRINT TRUE please!
 // Replace the underscores.
 
-const a = 5;
-const b = 10;
-const c = 15;
-const d = "Keke"
+// const a = 5;
+// const b = 10;
+// const c = 15;
+// const d = "Keke"
 
 // console.log(a < b)
 // console.log(c > b)
@@ -186,18 +186,18 @@ const d = "Keke"
 // indexOf() returns the first index at which a given element can be found, returns -1 if not present. i.e let array = [1,2,3,4,5] -> array.indexOf(2) -> 1 || array.indexOf(100) -> -1
 // length returns the length of an array. i.e let array = [1,2,3,4,5] -> array.length -> 5 **doesn't start the count at 0 but rather 1..not index based.**
 
-/* You've been tasked to do this week's grocery shopping. As you arrive at Times Supermarket, Raphael pings you to get a bottle of Hendricks gin. Add this to the existing shoppingList and console.log it.*/
-var shoppingList = [
+// /* You've been tasked to do this week's grocery shopping. As you arrive at Times Supermarket, Raphael pings you to get a bottle of Hendricks gin. Add this to the existing shoppingList and console.log it.*/
+// var shoppingList = [
 
-  "cool ranch doritos",
+//   "cool ranch doritos",
 
-  "kings hawaiian sweet bread",
+//   "kings hawaiian sweet bread",
 
-  "peanut butter oreos",
+//   "peanut butter oreos",
 
-  "fruit loops cereal"
+//   "fruit loops cereal"
 
-];
+// ];
 
 // ***done a few ways
 // shoppingList.push('Hendricks gin');
@@ -232,8 +232,16 @@ var shoppingList = [
 // ===== SPREAD OPERATOR =====
 
 // Create a variable and assign a value of a copied array using the spread operator
+// let array = [1,2,3,4,5,6,7];
+// let newArray = [...array];
+// console.log(array);
+// console.log(newArray);
 
-// Create two arrays with any elements and connect both of them using the spread operator. Save the connected arrays into a new variable.
+// // Create two arrays with any elements and connect both of them using the spread operator. Save the connected arrays into a new variable.
+// let stringArray = ['Hello','my namne', 'is', 'Richard'];
+// let stringArray2 = ['I','am','learning','about','arrays'];
+// let concatArray = [...stringArray , ...stringArray2];
+// console.log(concatArray);
 
 ////////////////////////////////////////////////////////////////
 // Functions:
@@ -242,12 +250,44 @@ var shoppingList = [
 // Don't forget to CALL your functions
 
 //1. Write a function maxOfTwoNumbers that takes two numbers as arguments and returns the largest of them. Use the if-then-else construct available in Javascript. Do some googling to figure this out if you forget how conditionals work.
+// const maxOfTwoNumbers = (a ,b) => {
+//   if(a > b) {
+//     return a
+//   } else if(b > a) {
+//     return b
+//   } else {
+//     return 'Equal';
+//   }
+// }
+// console.log(maxOfTwoNumbers(123e5,324e2));
+// //2. Write a function maxOfThree that takes three numbers as arguments and returns the largest of them.
+// const maxOfThree = (a, b, c) => {
+//   let array = [a,b,c];
+//   array.sort((a,b) => a - b)
+//   return array[array.length - 1];
+// }
+// console.log(maxOfThree(22234,3333333,444));
 
-//2. Write a function maxOfThree that takes three numbers as arguments and returns the largest of them.
+// //3. Write a function isCharacterAVowel that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise
+// const isCharacterAVowel = (character) => {
+//   let vowel = /[aeiou]/gi;
+//   if(character.match(vowel)) {
+//     return true
+//   }
+//   return false;
+// }
+// console.log(isCharacterAVowel('a'));
+// console.log(isCharacterAVowel('A'));
+// console.log(isCharacterAVowel('k'));
+// //4. Write a function charCount that takes a string and returns the length of the string.
+// const charCount = (string) => string.length;
+// console.log(charCount("I am beautiful, no matter what they say.")); // could use trim().length if we wanted to remove whitespace and inclue characters only
 
-//3. Write a function isCharacterAVowel that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise
-
-//4. Write a function charCount that takes a string and returns the length of the string.
-
-//5. Write a function vowelCount that takes a String and returns the number of vowels in the String. Add a check for the string to be of 10 or less characters.
-
+// //5. Write a function vowelCount that takes a String and returns the number of vowels in the String. Add a check for the string to be of 10 or less characters.
+// const vowelCount = (string) => {
+//   let vowels = /[aeiou]/ig;
+//   return string.match(vowels).length;
+  
+// }
+// console.log(vowelCount('aeiou'));
+// console.log(vowelCount('I wish I was an elephant'));
