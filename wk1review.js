@@ -15,6 +15,31 @@ If students get 70 or above: console log C
 If students get 55 or above: console log D
 Any grade lower than 55 is F */
 
+function autoGrader(grade) {
+  if(grade >= 55) {
+    if(grade < 70) {
+      console.log("D");
+    } else if(grade < 80) {
+      console.log("C");
+    } else if(grade < 90) {
+      console.log("B");
+    } else {
+      console.log("A");
+    }
+  } else {
+    console.log("F");
+  }
+}
+autoGrader(90);
+autoGrader(93);
+autoGrader(80);
+autoGrader(85);
+autoGrader(70);
+autoGrader(72);
+autoGrader(55);
+autoGrader(67);
+autoGrader(54);
+
 //3. Write a JavaScript program that displays "Good Morning" if time is between 5AM-11:59 | "Good Afternoon" if time is between 12 - 16 | otherwise "Hey there"
 
 ////////////////////////////////////////////////////////////////
