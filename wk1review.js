@@ -3,7 +3,10 @@
 ///////////////////////////////////////////////////////////////
 
 //1. Write a JavaScript display the larger of two integers
-
+  function greaterNumber(x,y) {
+    return x > y ? x: y;
+  }
+  console.log(greaterNumber(3,2));
 /* 2. Write an if/else statement for the following requirements:
 
 If student gets 90 or higher: console log  A
